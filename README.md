@@ -1,0 +1,2 @@
+# weblio_scraping
+Weblioの英和・和英辞典をスクレイピングするサーバをElixirで書いてみる
