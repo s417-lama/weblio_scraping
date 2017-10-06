@@ -36,7 +36,7 @@ defmodule WeblioScrapingWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_weblio_scraping_key",
-    signing_salt: "iND96eLU"
+    signing_salt: "2oGVga2E"
 
   plug WeblioScrapingWeb.Router
 

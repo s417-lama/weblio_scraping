@@ -12,7 +12,7 @@ config :weblio_scraping,
 # Configures the endpoint
 config :weblio_scraping, WeblioScrapingWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "Dpuj2/WdtuF8okWVJo8rdV6nF5+5MpBHyX4ouhdHd3pZs5LxqPVqTg1JGJsOtJAq",
+  secret_key_base: "BZEho/ZaQo+xCnfKcxpvj79vxcBaoA0rgNY6tOp/NnmuVaD6uWM9LBU+FlDdUsf8",
   render_errors: [view: WeblioScrapingWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: WeblioScraping.PubSub,
            adapter: Phoenix.PubSub.PG2]
