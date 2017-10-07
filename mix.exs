@@ -20,7 +20,7 @@ defmodule WeblioScraping.Mixfile do
   def application do
     [
       mod: {WeblioScraping.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :httpoison]
     ]
   end
 
@@ -40,6 +40,8 @@ defmodule WeblioScraping.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
+      {:httpoison, "~> 0.13"},
+      {:floki, "~> 0.18"},
       {:cowboy, "~> 1.0"}
     ]
   end
