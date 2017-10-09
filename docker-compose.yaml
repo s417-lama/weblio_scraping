@@ -1,0 +1,14 @@
+version: '3'
+services:
+    web:
+        build: .
+        ports:
+            - "80:80"
+        depends_on:
+            - db
+        entrypoint: ./wait-for-postgres.sh db /opt/bin/weblio_scraping foreground
+
+    db:
+        image: postgres
+        environment:
+            - POSTGRES_DB=weblio_scraping_prod
